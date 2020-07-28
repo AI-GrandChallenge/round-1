@@ -85,7 +85,8 @@ def _infer(model, root_path, test_loader=None):
 def bind_nsml(model):
     """NSML binding function.
 
-    This function is used for internal process in NSML. Do not change.
+    This function is used for internal process in NSML.
+    You can modify this module according to your deep learning framework.
     """
     def save(dir_name, *args, **kwargs):
         os.makedirs(dir_name, exist_ok=True)
