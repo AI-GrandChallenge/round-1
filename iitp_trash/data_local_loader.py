@@ -24,7 +24,8 @@ def get_transform():
 class CustomDataset(data.Dataset):
     """Dataset class.
 
-    This class is used for internal NSML inference system. Do not change.
+    This class is used for internal NSML inference system.
+    You can modify this module for improving your data loading efficiency.
     """
     def __init__(self, root, transform):
         self.data_root = os.path.join(root, 'test_data')
